@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:576px) {
+    .box {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .box {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, 30%);
+    /* grid-template-columns: repeat(3,minmax(150px,1fr)); */
+    /* grid-template-rows: repeat(3,minmax(150px,1fr)); */
+
+    padding: 20px;
+
+
+
+}
+
+.box {
+    height: 90px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+    background-color: yellow;
+    border: none;
+    font-size: 20px;
+}
+
+#reset-btn {
+    padding: 10px;
+    font-size: 10px;
+    color: white;
+    background-color: #191913;
+    border: none;
+    border-radius: 10px;
+}
+
+#new-btn {
+    padding: 10px;
+    font-size: 20px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+#msg {
+    color: green;
+    font-size: 20px;
+}
+
+.msg-container {
+    margin-bottom: 20px;
+}
+
+.hide {
+    display: none;
+}
